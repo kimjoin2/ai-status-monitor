@@ -18,6 +18,7 @@ class StatusMonitor: ObservableObject {
     
     private var timer: Timer?
     private var previousStatuses: [String: ServiceStatus] = [:]
+    private let notificationSettings = NotificationSettings.shared
     
     init() {
         requestNotificationPermission()
@@ -96,7 +97,9 @@ class StatusMonitor: ObservableObject {
         
         for (service, newStatus) in newStatuses {
             if let oldStatus = oldStatuses[service], oldStatus != newStatus {
-                sendStatusChangeNotification(service: service, from: oldStatus, to: newStatus)
+                if notificationSettings.shouldNotify(for: service, from: oldStatus, to: newStatus) {
+                    sendStatusChangeNotification(service: service, from: oldStatus, to: newStatus)
+                }
             }
         }
         
@@ -149,9 +152,19 @@ class StatusMonitor: ObservableObject {
     
     private func sendStatusChangeNotification(service: String, from oldStatus: ServiceStatus, to newStatus: ServiceStatus) {
         let content = UNMutableNotificationContent()
-        content.title = "AI Service Status Change"
-        content.body = "\(service) status changed from \(oldStatus.description) to \(newStatus.description)"
-        content.sound = .default
+        content.title = notificationSettings.getNotificationTitle(for: service, status: newStatus)
+        content.body = "\(oldStatus.description) → \(newStatus.description)"
+        content.sound = notificationSettings.getNotificationSound(for: newStatus)
+        
+        // 중요도에 따라 알림 카테고리 설정
+        switch newStatus {
+        case .outage:
+            content.categoryIdentifier = "OUTAGE"
+        case .degraded:
+            content.categoryIdentifier = "DEGRADED"
+        case .operational:
+            content.categoryIdentifier = "RECOVERY"
+        }
         
         let request = UNNotificationRequest(
             identifier: "status-change-\(service)-\(Date().timeIntervalSince1970)",

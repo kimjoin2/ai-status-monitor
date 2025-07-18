@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var statusMonitor = StatusMonitor()
+    @State private var showingSettings = false
     
     var body: some View {
         VStack(spacing: 20) {
@@ -60,10 +61,17 @@ struct ContentView: View {
             Spacer()
             
             VStack(spacing: 8) {
-                Button("Refresh Status") {
-                    statusMonitor.refreshStatus()
+                HStack(spacing: 12) {
+                    Button("Refresh Status") {
+                        statusMonitor.refreshStatus()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    
+                    Button("Settings") {
+                        showingSettings = true
+                    }
+                    .buttonStyle(.bordered)
                 }
-                .buttonStyle(.borderedProminent)
                 
                 if let lastUpdate = statusMonitor.lastUpdate {
                     Text("Last updated: \(lastUpdate, style: .time)")
@@ -74,12 +82,15 @@ struct ContentView: View {
             .padding(.bottom)
         }
         .padding()
-        .frame(minWidth: 180, minHeight: 500)
+        .frame(minWidth: 400, maxWidth: 450, minHeight: 550, maxHeight: 650)
         .onAppear {
             statusMonitor.startMonitoring()
         }
         .onDisappear {
             statusMonitor.stopMonitoring()
+        }
+        .sheet(isPresented: $showingSettings) {
+            SettingsView()
         }
     }
 }
