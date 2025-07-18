@@ -2,6 +2,23 @@
 
 A native macOS application that monitors the real-time status of popular AI services including Claude (Anthropic), OpenAI, and Google Gemini. The app provides both a main application interface and a convenient home screen widget for quick status checks.
 
+## Screenshots
+
+<div align="center">
+  <img src="images/app-main.png" alt="Main Application Interface" width="400">
+  <p><em>Main application showing real-time AI service status</em></p>
+</div>
+
+<div align="center">
+  <img src="images/widgets.png" alt="Widget Collection" width="600">
+  <p><em>Home screen widgets in various sizes</em></p>
+</div>
+
+<div align="center">
+  <img src="images/app-config.png" alt="Settings Interface" width="400">
+  <p><em>Customizable notification settings</em></p>
+</div>
+
 ## Overview
 
 AI Status Monitor helps developers and AI enthusiasts stay informed about the operational status of major AI services. With customizable notifications and real-time monitoring, you'll never miss important service updates that might affect your work or projects.
@@ -10,7 +27,7 @@ AI Status Monitor helps developers and AI enthusiasts stay informed about the op
 
 ### 🔍 Real-time Status Monitoring
 - **Multi-service tracking**: Monitors Claude (Anthropic), OpenAI, and Google Gemini
-- **Automatic updates**: Refreshes status every 5 minutes for widgets, 15 minutes for the main app
+- **Automatic updates**: Refreshes status every 5 minutes for both widgets and main app
 - **Status indicators**: 
   - 🚨 **Service Outage**: Complete service unavailability
   - ⚠️ **Performance Degradation**: Slow or partial service issues

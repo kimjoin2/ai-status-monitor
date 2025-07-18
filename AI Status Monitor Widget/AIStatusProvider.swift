@@ -29,11 +29,8 @@ struct AIStatusProvider: TimelineProvider {
         Task {
             let entry = await fetchCurrentStatus()
             
-            // 위젯 추가 시에는 즉시 갱신, 그 외에는 5분마다 업데이트
-            let updateInterval: TimeInterval = context.isPreview ? 5 * 60 : 5 * 60
-            let nextUpdate = Calendar.current.date(byAdding: .second, value: Int(updateInterval), to: Date()) ?? Date()
-            
-            // 위젯이 처음 추가될 때는 즉시 업데이트하고, 그 다음부터는 5분 간격
+            // 5분마다 업데이트
+            let nextUpdate = Calendar.current.date(byAdding: .minute, value: 5, to: Date()) ?? Date()
             let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
             
             completion(timeline)

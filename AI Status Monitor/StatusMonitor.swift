@@ -30,7 +30,7 @@ class StatusMonitor: ObservableObject {
         // 위젯 즉시 업데이트
         WidgetCenter.shared.reloadAllTimelines()
         
-        timer = Timer.scheduledTimer(withTimeInterval: 15 * 60, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 5 * 60, repeats: true) { _ in
             self.refreshStatus()
         }
     }

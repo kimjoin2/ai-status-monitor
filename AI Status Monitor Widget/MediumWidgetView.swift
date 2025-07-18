@@ -12,24 +12,24 @@ struct MediumWidgetView: View {
     let entry: AIStatusEntry
     
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 8) {
             HStack {
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 2) {
                     Text("AI Status Monitor")
-                        .font(.headline)
+                        .font(.subheadline)
                         .fontWeight(.bold)
                     
                     Text("Service Status Overview")
-                        .font(.caption)
+                        .font(.caption2)
                         .foregroundColor(.secondary)
                 }
                 
                 Spacer()
                 
-                VStack(alignment: .trailing, spacing: 2) {
+                HStack(spacing: 4) {
                     Circle()
                         .fill(colorForStatus(entry.overallStatus))
-                        .frame(width: 16, height: 16)
+                        .frame(width: 12, height: 12)
                     
                     Text(entry.overallStatus.description)
                         .font(.caption2)
@@ -37,7 +37,7 @@ struct MediumWidgetView: View {
                 }
             }
             
-            HStack(spacing: 16) {
+            HStack(spacing: 8) {
                 ServiceCard(
                     name: "Claude",
                     fullName: "Anthropic",
@@ -57,8 +57,6 @@ struct MediumWidgetView: View {
                 )
             }
             
-            Spacer()
-            
             HStack {
                 Text("Last updated: \(entry.date, style: .time)")
                     .font(.caption2)
@@ -67,7 +65,7 @@ struct MediumWidgetView: View {
                 Spacer()
             }
         }
-        .padding()
+        .padding(12)
         .containerBackground(for: .widget) { }
     }
     
@@ -89,32 +87,33 @@ struct ServiceCard: View {
     let status: ServiceStatus
     
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 4) {
             Circle()
                 .fill(colorForStatus(status))
-                .frame(width: 20, height: 20)
+                .frame(width: 16, height: 16)
             
-            VStack(spacing: 2) {
+            VStack(spacing: 1) {
                 Text(name)
-                    .font(.caption)
+                    .font(.caption2)
                     .fontWeight(.medium)
                     .minimumScaleFactor(0.8)
                 
                 Text(fullName)
                     .font(.caption2)
                     .foregroundColor(.secondary)
-                    .minimumScaleFactor(0.8)
+                    .minimumScaleFactor(0.7)
             }
             
             Text(statusText(status))
                 .font(.caption2)
                 .foregroundColor(colorForStatus(status))
-                .minimumScaleFactor(0.7)
+                .fontWeight(.medium)
+                .minimumScaleFactor(0.8)
         }
         .frame(maxWidth: .infinity)
-        .padding(8)
+        .padding(6)
         .background(Color(.controlBackgroundColor))
-        .cornerRadius(8)
+        .cornerRadius(6)
     }
     
     private func colorForStatus(_ status: ServiceStatus) -> Color {
