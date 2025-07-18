@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		518DD8552E2A017B0052CF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 518DD83E2E2A017A0052CF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518DD8452E2A017A0052CF18;
+			remoteInfo = "AI Status Monitor";
+		};
+		518DD85F2E2A017B0052CF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 518DD83E2E2A017A0052CF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518DD8452E2A017A0052CF18;
+			remoteInfo = "AI Status Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		518DD8462E2A017A0052CF18 /* AI Status Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Status Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518DD8542E2A017B0052CF18 /* AI Status MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Status MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518DD85E2E2A017B0052CF18 /* AI Status MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Status MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		518DD8482E2A017A0052CF18 /* AI Status Monitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI Status Monitor";
+			sourceTree = "<group>";
+		};
+		518DD8572E2A017B0052CF18 /* AI Status MonitorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI Status MonitorTests";
+			sourceTree = "<group>";
+		};
+		518DD8612E2A017B0052CF18 /* AI Status MonitorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI Status MonitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518DD8432E2A017A0052CF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518DD8512E2A017B0052CF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518DD85B2E2A017B0052CF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DD83D2E2A017A0052CF18 = {
+			isa = PBXGroup;
+			children = (
+				518DD8482E2A017A0052CF18 /* AI Status Monitor */,
+				518DD8572E2A017B0052CF18 /* AI Status MonitorTests */,
+				518DD8612E2A017B0052CF18 /* AI Status MonitorUITests */,
+				518DD8472E2A017A0052CF18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		518DD8472E2A017A0052CF18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				518DD8462E2A017A0052CF18 /* AI Status Monitor.app */,
+				518DD8542E2A017B0052CF18 /* AI Status MonitorTests.xctest */,
+				518DD85E2E2A017B0052CF18 /* AI Status MonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		518DD8452E2A017A0052CF18 /* AI Status Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518DD8682E2A017B0052CF18 /* Build configuration list for PBXNativeTarget "AI Status Monitor" */;
+			buildPhases = (
+				518DD8422E2A017A0052CF18 /* Sources */,
+				518DD8432E2A017A0052CF18 /* Frameworks */,
+				518DD8442E2A017A0052CF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				518DD8482E2A017A0052CF18 /* AI Status Monitor */,
+			);
+			name = "AI Status Monitor";
+			packageProductDependencies = (
+			);
+			productName = "AI Status Monitor";
+			productReference = 518DD8462E2A017A0052CF18 /* AI Status Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		518DD8532E2A017B0052CF18 /* AI Status MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518DD86B2E2A017B0052CF18 /* Build configuration list for PBXNativeTarget "AI Status MonitorTests" */;
+			buildPhases = (
+				518DD8502E2A017B0052CF18 /* Sources */,
+				518DD8512E2A017B0052CF18 /* Frameworks */,
+				518DD8522E2A017B0052CF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				518DD8562E2A017B0052CF18 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				518DD8572E2A017B0052CF18 /* AI Status MonitorTests */,
+			);
+			name = "AI Status MonitorTests";
+			packageProductDependencies = (
+			);
+			productName = "AI Status MonitorTests";
+			productReference = 518DD8542E2A017B0052CF18 /* AI Status MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		518DD85D2E2A017B0052CF18 /* AI Status MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518DD86E2E2A017B0052CF18 /* Build configuration list for PBXNativeTarget "AI Status MonitorUITests" */;
+			buildPhases = (
+				518DD85A2E2A017B0052CF18 /* Sources */,
+				518DD85B2E2A017B0052CF18 /* Frameworks */,
+				518DD85C2E2A017B0052CF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				518DD8602E2A017B0052CF18 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				518DD8612E2A017B0052CF18 /* AI Status MonitorUITests */,
+			);
+			name = "AI Status MonitorUITests";
+			packageProductDependencies = (
+			);
+			productName = "AI Status MonitorUITests";
+			productReference = 518DD85E2E2A017B0052CF18 /* AI Status MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		518DD83E2E2A017A0052CF18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					518DD8452E2A017A0052CF18 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					518DD8532E2A017B0052CF18 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 518DD8452E2A017A0052CF18;
+					};
+					518DD85D2E2A017B0052CF18 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 518DD8452E2A017A0052CF18;
+					};
+				};
+			};
+			buildConfigurationList = 518DD8412E2A017A0052CF18 /* Build configuration list for PBXProject "AI Status Monitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518DD83D2E2A017A0052CF18;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 518DD8472E2A017A0052CF18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				518DD8452E2A017A0052CF18 /* AI Status Monitor */,
+				518DD8532E2A017B0052CF18 /* AI Status MonitorTests */,
+				518DD85D2E2A017B0052CF18 /* AI Status MonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		518DD8442E2A017A0052CF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518DD8522E2A017B0052CF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518DD85C2E2A017B0052CF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		518DD8422E2A017A0052CF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518DD8502E2A017B0052CF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518DD85A2E2A017B0052CF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		518DD8562E2A017B0052CF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 518DD8452E2A017A0052CF18 /* AI Status Monitor */;
+			targetProxy = 518DD8552E2A017B0052CF18 /* PBXContainerItemProxy */;
+		};
+		518DD8602E2A017B0052CF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 518DD8452E2A017A0052CF18 /* AI Status Monitor */;
+			targetProxy = 518DD85F2E2A017B0052CF18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		518DD8662E2A017B0052CF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		518DD8672E2A017B0052CF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		518DD8692E2A017B0052CF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AI Status Monitor/AI_Status_Monitor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kim.bumnyeong.AI-Status-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		518DD86A2E2A017B0052CF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AI Status Monitor/AI_Status_Monitor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kim.bumnyeong.AI-Status-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		518DD86C2E2A017B0052CF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kim.bumnyeong.AI-Status-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI Status Monitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI Status Monitor";
+			};
+			name = Debug;
+		};
+		518DD86D2E2A017B0052CF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kim.bumnyeong.AI-Status-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI Status Monitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI Status Monitor";
+			};
+			name = Release;
+		};
+		518DD86F2E2A017B0052CF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kim.bumnyeong.AI-Status-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "AI Status Monitor";
+			};
+			name = Debug;
+		};
+		518DD8702E2A017B0052CF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LWR68Z3FUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kim.bumnyeong.AI-Status-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "AI Status Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		518DD8412E2A017A0052CF18 /* Build configuration list for PBXProject "AI Status Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518DD8662E2A017B0052CF18 /* Debug */,
+				518DD8672E2A017B0052CF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518DD8682E2A017B0052CF18 /* Build configuration list for PBXNativeTarget "AI Status Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518DD8692E2A017B0052CF18 /* Debug */,
+				518DD86A2E2A017B0052CF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518DD86B2E2A017B0052CF18 /* Build configuration list for PBXNativeTarget "AI Status MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518DD86C2E2A017B0052CF18 /* Debug */,
+				518DD86D2E2A017B0052CF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518DD86E2E2A017B0052CF18 /* Build configuration list for PBXNativeTarget "AI Status MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518DD86F2E2A017B0052CF18 /* Debug */,
+				518DD8702E2A017B0052CF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 518DD83E2E2A017A0052CF18 /* Project object */;
+}
