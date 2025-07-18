@@ -1,0 +1,10 @@
+build
+ccusage
+
+# Xcode project files with sensitive information
+*.pbxproj
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
